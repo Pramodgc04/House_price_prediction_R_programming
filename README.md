@@ -1,47 +1,4 @@
 
-# Housing Price Prediction with Random Forest
-
-This project uses a dataset to predict housing prices based on various features like the neighborhood, condition, overall quality, and more. The model utilizes Random Forest for regression, and the dataset is analyzed and preprocessed to visualize correlations, distributions, and other insights.
-
-## Prerequisites
-
-Before running the project, make sure you have the following libraries installed in R:
-
-- ggplot2
-- gridExtra
-- grid
-- lattice
-- scales
-- moments
-- devtools
-- corrplot
-- reshape2
-- dplyr
-- caret
-- car
-- randomForest
-- Metrics
-- performance
-
-You can install the required libraries using the following commands:
-
-```r
-install.packages("ggplot2")
-install.packages("gridExtra")
-install.packages("grid")
-install.packages("lattice")
-install.packages("scales")
-install.packages("moments")
-install.packages("devtools")
-install.packages("corrplot")
-install.packages("reshape2")
-install.packages("dplyr")
-install.packages("caret")
-install.packages("car")
-install.packages("randomForest")
-install.packages("Metrics")
-install.packages("performance")
-
 Project Overview
 This project involves the following key steps:
 
@@ -121,3 +78,47 @@ ranfor_model <- randomForest(x = data_train[, -22], y = data_train$SalePrice, nt
 # Evaluate performance
 rf_pred <- predict(ranfor_model, data_test)
 rmse(rf_pred, data_test$SalePrice)
+
+
+# Housing Price Prediction with Random Forest
+
+This project uses a dataset to predict housing prices based on various features like the neighborhood, condition, overall quality, and more. The model utilizes Random Forest for regression, and the dataset is analyzed and preprocessed to visualize correlations, distributions, and other insights.
+
+## Prerequisites
+
+Before running the project, make sure you have the following libraries installed in R:
+
+- ggplot2
+- gridExtra
+- grid
+- lattice
+- scales
+- moments
+- devtools
+- corrplot
+- reshape2
+- dplyr
+- caret
+- car
+- randomForest
+- Metrics
+- performance
+
+You can install the required libraries using the following commands:
+
+```r
+install.packages("ggplot2")
+install.packages("gridExtra")
+install.packages("grid")
+install.packages("lattice")
+install.packages("scales")
+install.packages("moments")
+install.packages("devtools")
+install.packages("corrplot")
+install.packages("reshape2")
+install.packages("dplyr")
+install.packages("caret")
+install.packages("car")
+install.packages("randomForest")
+install.packages("Metrics")
+install.packages("performance")
